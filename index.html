@@ -17,72 +17,76 @@
   </head>
   <body>
     <header class="header__top">
-      <div class="container">
-        <nav>
-          <!-- logo -->
-          <a href="/" class="logo"><span>WEB</span>STUDIO</a>
-          <!-- nav menu -->
-          <ul class="menu-list">
-            <li class="menu-list-item">
+      <div class="container section">
+        <div class="menu-content flex-menu">
+          <nav class="nav-menu flex-menu">
+            <!-- logo -->
+            <a href="/" class="logo"><span>WEB</span>STUDIO</a>
+            <!-- nav menu -->
+            <ul class="menu-list flex-menu">
+              <li class="menu-list-item">
+                <a
+                  href="./index.html"
+                  rel="noopener noreferrer nofolow"
+                  class="menu-list-link"
+                  >Studio</a
+                >
+              </li>
+              <li class="menu-list-item">
+                <a
+                  href="./portfolio.html"
+                  rel="noopener noreferrer nofolow"
+                  class="menu-list-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="menu-list-item">
+                <a
+                  href="#contacts"
+                  rel="noopener noreferrer nofolow"
+                  class="menu-list-link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+  
+          <!-- contacts -->
+          <ul class="contacts-list flex-menu">
+            <li class="contacts-list-item ">
               <a
-                href="./index.html"
+                href="mailto:info@devstudio.com"
                 rel="noopener noreferrer nofolow"
-                class="menu-list-link"
-                >Studio</a
+                class="contacts-list-link"
+                >info@devstudio.com</a
               >
             </li>
-            <li class="menu-list-item">
+            <li class="contacts-list-item">
               <a
-                href="./portfolio.html"
+                href="tel:+11(000)1111111"
                 rel="noopener noreferrer nofolow"
-                class="menu-list-link"
-                >Portfolio</a
-              >
-            </li>
-            <li class="menu-list-item">
-              <a
-                href="#contacts"
-                rel="noopener noreferrer nofolow"
-                class="menu-list-link"
-                >Contacts</a
+                class="contacts-list-link"
+                >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
-        </nav>
-
-        <!-- contacts -->
-        <ul class="contacts-list">
-          <li class="contacts-list-item ">
-            <a
-              href="mailto:info@devstudio.com"
-              rel="noopener noreferrer nofolow"
-              class="contacts-list-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-list-item">
-            <a
-              href="tel:+11(000)1111111"
-              rel="noopener noreferrer nofolow"
-              class="contacts-list-link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- banner -->
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
-          <h1 class="caption-h1">Effective Solutions for Your Business</h1>
-          <button class="order-service" type="button">Order Service</button>
+          <div class="hero-content">
+            <h1 class="caption-h1">Effective Solutions for Your Business</h1>
+            <button class="order-service" type="button">Order Service</button>
+          </div>
         </div>
       </section>
 
       <!-- advantages section -->
-      <section class="advantages">
+      <section class="advantages section">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="advantages-list">
@@ -119,7 +123,7 @@
       </section>
 
       <!-- images section -->
-      <section class="wawd">
+      <section class="wawd section">
         <div class="container">
           <h2 class="caption-h2 caption-navyblue">What are we doing</h2>
           <ul class="wawd-list">
@@ -152,7 +156,7 @@
       </section>
 
       <!-- team section -->
-      <section class="our-team">
+      <section class="our-team section">
         <div class="container">
           <h2 class="caption-h2 caption-navyblue">Our Team</h2>
           <ul class="our-team-list">
@@ -216,7 +220,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
         <a href="./index.html" rel="noopener noreferrer nofolow" class="logo"
           ><span>WEB</span>STUDIO</a

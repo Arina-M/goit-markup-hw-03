@@ -46,6 +46,8 @@ li {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
+
 }
 
 .caption-h3 {
@@ -75,6 +77,9 @@ li {
 .container{
   max-width: 1158px;
   margin: 0 auto;
+}
+
+.section{
   padding: 0 15px;
 }
 
@@ -91,10 +96,17 @@ li {
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--color-navyblue);
+  margin-right: 76px;
 }
 
 .logo span {
   color: var(--color-iris);
+}
+
+.flex-menu{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .menu-list-link,
@@ -113,18 +125,16 @@ li {
   color: var(--color-slate);
 }
 
-.menu-list-item :hover,
-.contacts-list-item :hover .menu-list-item :focus,
-.contacts-list-item :focus {
+.menu-list-item:hover,
+.contacts-list-item:hover .menu-list-item:focus,
+.contacts-list-item:focus {
   color: var(--color-iris);
 }
 
-.menu-list, .contacts-list{
-  display: flex;
-}
-.row-content{
-  display: flex;
-}
+/* 
+.menu-list-item:not(:last-child), .contacts-list-item:not(:last-child){
+  margin-right: 40px;
+} */
 
 /* HERO */
 .hero {
@@ -133,10 +143,12 @@ li {
   text-align: center;
   height: 600px;
 }
-
-.hero .container .caption-h1{
-  /* width: 494px; */
-  /* height: 120px; */
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
 }
 
 .order-service {
@@ -165,6 +177,13 @@ li {
 .advantages{
   padding: 120px 0;
 }
+
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 .advantages-card-info {
   font-size: 16px;
   line-height: 1.5;
@@ -177,6 +196,7 @@ li {
   width: 264px;
 }
 
+
 /* WHAT ARE WE DOING */
 .wawd{
   padding-bottom: 120px;
@@ -184,6 +204,9 @@ li {
 
 .wawd-list{
   margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 
@@ -195,6 +218,9 @@ li {
 
 .our-team-list{
   margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .our-team-list-item {
@@ -256,7 +282,14 @@ li {
 .filter-list{
   margin-top: 96px;
   margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
+
+/* .filter-list-item{
+  margin-right: 24px;
+} */
 
 .filter-list-item :hover,
 .filter-list-item:focus {
@@ -266,11 +299,22 @@ li {
 }
 
 /* articles */
+.portfolio-articles{
+  padding-bottom: 120px;
+}
+
+.articles-list{
+  display: flex;
+  flex-flow: wrap;
+  gap: 48px 24px;
+}
+
 .article-list-item {
   background-color: var(--color-white);
   border: 1px solid;
   border-color: var(--color-cornflower);
   width: 360px;
+
 }
 
 .pa-category {
