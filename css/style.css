@@ -292,12 +292,10 @@ img{
 .articles-list {
   display: flex;
   flex-flow: wrap;
-  /* gap: 48px 24px; */
 }
 
 .article-list-item {
   background-color: var(--color-white);
-  /* width: 360px; */
   margin-right: 24px;
   margin-bottom: 48px;
   width: calc((100% - 48px)/ 3 );
